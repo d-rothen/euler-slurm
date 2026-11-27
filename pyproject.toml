@@ -1,6 +1,6 @@
 [project]
 name = "euler-slurm"
-version = "0.3.0"
+version = "0.4.0"
 description = "SLURM jobs as typed, versioned JSON, with plain-language explanations of pending reasons, states and failures"
 readme = "README.md"
 requires-python = ">=3.9"
