@@ -1,0 +1,1054 @@
+{
+ "jobs": [
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795185002
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "eu-g6-023",
+   "command": "/cluster/home/alice/proj/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 8
+   },
+   "current_working_directory": "/cluster/home/alice/proj",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795199470
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [
+    "gpu:rtx_4090:1(IDX:0)"
+   ],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000003,
+   "job_state": [
+    "RUNNING"
+   ],
+   "name": "ev-rtx-1120-1430",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/proj/logs/slurm-91000003.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/proj/logs/slurm-91000003.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795185070
+   },
+   "state_description": "",
+   "state_reason": "None",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795185002
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 240
+   },
+   "tres_alloc_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1,gres/gpu:rtx_4090=1",
+   "tres_req_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1",
+   "tres_per_job": "gres/gpu:1",
+   "tres_per_node": "",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795178586
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "",
+   "command": "/cluster/home/alice/proj/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 8
+   },
+   "current_working_directory": "/cluster/home/alice/proj",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795368000
+   },
+   "exit_code": {
+    "status": [
+     "PENDING"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000009,
+   "job_state": [
+    "PENDING"
+   ],
+   "name": "metric_train-1120-1243",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "",
+   "partition": "gpu.120h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/proj/slurm-91000009.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/proj/slurm-91000009.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795195200
+   },
+   "state_description": "",
+   "state_reason": "Priority",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795178586
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 2880
+   },
+   "tres_alloc_str": "",
+   "tres_req_str": "cpu=8,mem=64G,node=1,billing=8,gres/gpu=1",
+   "tres_per_job": "gres/gpu:1",
+   "tres_per_node": "",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795186800
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 91000020
+   },
+   "array_task_id": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "eu-g6-011",
+   "command": "/cluster/home/alice/sweep/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 4
+   },
+   "current_working_directory": "/cluster/home/alice/sweep",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795204200
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [
+    "gpu:a100_80gb:1(IDX:3)"
+   ],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000021,
+   "job_state": [
+    "RUNNING"
+   ],
+   "name": "sweep",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "eu-g6-011",
+   "partition": "gpu.4h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/sweep/sweep-91000020_1.err",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/sweep/sweep-91000020_1.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795189800
+   },
+   "state_description": "",
+   "state_reason": "None",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795186800
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 240
+   },
+   "tres_alloc_str": "cpu=4,mem=16G,node=1,billing=4,gres/gpu=1",
+   "tres_req_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1",
+   "tres_per_job": "",
+   "tres_per_node": "",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795186800
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 91000020
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 2
+   },
+   "array_task_string": "2-4%2",
+   "batch_flag": true,
+   "batch_host": "",
+   "command": "/cluster/home/alice/sweep/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 4
+   },
+   "current_working_directory": "/cluster/home/alice/sweep",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "exit_code": {
+    "status": [
+     "PENDING"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000020,
+   "job_state": [
+    "PENDING"
+   ],
+   "name": "sweep",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "",
+   "partition": "gpu.4h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/sweep/slurm-91000020.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/sweep/sweep-%A_%a.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "state_description": "",
+   "state_reason": "JobArrayTaskLimit",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795186800
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 240
+   },
+   "tres_alloc_str": "",
+   "tres_req_str": "cpu=4,mem=16G,node=1,billing=4,gres/gpu=1",
+   "tres_per_job": "",
+   "tres_per_node": "gres/gpu:1",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795172400
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "",
+   "command": "/cluster/home/alice/proj/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 16
+   },
+   "current_working_directory": "/cluster/home/alice/proj",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "exit_code": {
+    "status": [
+     "PENDING"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000014,
+   "job_state": [
+    "PENDING"
+   ],
+   "name": "multinode",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 2
+   },
+   "nodes": "",
+   "partition": "gpu.24h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/proj/slurm-91000014.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/proj/slurm-91000014.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "state_description": "",
+   "state_reason": "ReqNodeNotAvail, UnavailableNodes:eu-g1-[001-004]",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795172400
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 1440
+   },
+   "tres_alloc_str": "",
+   "tres_req_str": "cpu=16,mem=128G,node=2,billing=16,gres/gpu=8",
+   "tres_per_job": "",
+   "tres_per_node": "gres/gpu:rtx_4090:4",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795165200
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "eu-g6-011",
+   "command": "/cluster/home/alice/proj/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 8
+   },
+   "current_working_directory": "/cluster/home/alice/proj",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795179660
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000004,
+   "job_state": [
+    "COMPLETED",
+    "COMPLETING"
+   ],
+   "name": "old-rtx-1120-0900",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "eu-g6-011",
+   "partition": "gpu.4h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/proj/slurm-91000004.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/proj/slurm-91000004.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795165260
+   },
+   "state_description": "",
+   "state_reason": "None",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795165200
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 240
+   },
+   "tres_alloc_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1,gres/gpu:rtx_4090=1",
+   "tres_req_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1",
+   "tres_per_job": "",
+   "tres_per_node": "",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795168800
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "",
+   "command": "/cluster/home/alice/proj/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 8
+   },
+   "current_working_directory": "/cluster/home/alice/proj",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "exit_code": {
+    "status": [
+     "PENDING"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000015,
+   "job_state": [
+    "PENDING"
+   ],
+   "name": "held-eval",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "",
+   "partition": "gpu.4h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/proj/slurm-91000015.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/proj/slurm-91000015.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "state_description": "",
+   "state_reason": "JobHeldUser",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795168800
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 240
+   },
+   "tres_alloc_str": "",
+   "tres_req_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1",
+   "tres_per_job": "",
+   "tres_per_node": "",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795186800
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "eu-a65-06",
+   "command": "/cluster/home/alice/proj/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 4
+   },
+   "current_working_directory": "/cluster/home/alice/proj",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000012,
+   "job_state": [
+    "RUNNING"
+   ],
+   "name": "debug|shell",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "eu-a65-06",
+   "partition": "normal.4h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/proj/slurm-91000012.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/proj/slurm-91000012.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795186830
+   },
+   "state_description": "",
+   "state_reason": "None",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795186800
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": true,
+    "number": 0
+   },
+   "tres_alloc_str": "cpu=4,mem=16G,node=1,billing=4,gres/gpu=2",
+   "tres_req_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1",
+   "tres_per_job": "",
+   "tres_per_node": "",
+   "user_id": 12345,
+   "user_name": "alice"
+  },
+  {
+   "account": "es_lab",
+   "accrue_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795161600
+   },
+   "array_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_id": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "array_max_tasks": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "array_task_string": "",
+   "batch_flag": true,
+   "batch_host": "eu-g6-030",
+   "command": "/cluster/home/alice/proj/run.sh",
+   "cpus": {
+    "set": true,
+    "infinite": false,
+    "number": 8
+   },
+   "current_working_directory": "/cluster/home/alice/proj",
+   "end_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795176005
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "gres_detail": [],
+   "group_id": 12345,
+   "group_name": "alice",
+   "het_job_id": {
+    "set": true,
+    "infinite": false,
+    "number": 0
+   },
+   "het_job_offset": {
+    "set": false,
+    "infinite": false,
+    "number": 0
+   },
+   "job_id": 91000099,
+   "job_state": [
+    "RUNNING"
+   ],
+   "name": "bobs-job",
+   "node_count": {
+    "set": true,
+    "infinite": false,
+    "number": 1
+   },
+   "nodes": "eu-g6-030",
+   "partition": "gpu.4h",
+   "priority": {
+    "set": true,
+    "infinite": false,
+    "number": 12345
+   },
+   "qos": "normal",
+   "standard_error": "/cluster/home/alice/proj/slurm-91000099.out",
+   "standard_input": "/dev/null",
+   "standard_output": "/cluster/home/alice/proj/slurm-91000099.out",
+   "start_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795161605
+   },
+   "state_description": "",
+   "state_reason": "None",
+   "submit_time": {
+    "set": true,
+    "infinite": false,
+    "number": 1795161600
+   },
+   "time_limit": {
+    "set": true,
+    "infinite": false,
+    "number": 240
+   },
+   "tres_alloc_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1,gres/gpu:rtx_4090=1",
+   "tres_req_str": "cpu=8,mem=48G,node=1,billing=8,gres/gpu=1",
+   "tres_per_job": "",
+   "tres_per_node": "",
+   "user_id": 23456,
+   "user_name": "bob"
+  }
+ ],
+ "meta": {
+  "plugin": {
+   "type": "openapi/slurmctld",
+   "name": "Slurm OpenAPI slurmctld",
+   "data_parser": "data_parser/v0.0.40",
+   "accounting_storage": "accounting_storage/slurmdbd"
+  },
+  "client": {
+   "source": "/dev/pts/3",
+   "user": "alice",
+   "group": "alice"
+  },
+  "command": [
+   "squeue",
+   "--json"
+  ],
+  "slurm": {
+   "version": {
+    "major": "23",
+    "micro": "4",
+    "minor": "11"
+   },
+   "release": "23.11.4",
+   "cluster": "euler"
+  }
+ },
+ "errors": [],
+ "warnings": []
+}

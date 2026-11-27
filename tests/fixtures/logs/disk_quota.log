@@ -1,0 +1,5 @@
+[2026-11-20 06:40:00] INFO saving checkpoint epoch_12.pt
+Traceback (most recent call last):
+  File "/cluster/home/alice/proj/train.py", line 230, in save
+    torch.save(state, path)
+OSError: [Errno 122] Disk quota exceeded: '/cluster/home/alice/proj/checkpoints/epoch_12.pt'

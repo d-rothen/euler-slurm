@@ -1,0 +1,9 @@
+Epoch 1:  10%|#         | 133/1329 [01:01<09:12,  2.16it/s]Epoch 1:  11%|#         | 146/1329 [01:07<09:06,  2.16it/s]Epoch 1:  12%|#2        | 159/1329 [01:13<09:00,  2.17it/s]
+[2026-11-20 06:00:15] INFO loading dataset vkitti2 (21260 samples)
+Epoch 3: 100%|##########| 1329/1329 [12:01<00:00,  1.84it/s, loss=0.231]
+Traceback (most recent call last):
+  File "/cluster/home/alice/proj/train.py", line 211, in <module>
+    main()
+  File "/cluster/home/alice/proj/train.py", line 188, in main
+    loss.backward()
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.00 GiB. GPU 0 has a total capacity of 23.55 GiB of which 1.12 GiB is free. Including non-PyTorch memory, this process has 22.42 GiB memory in use.

@@ -1,0 +1,8 @@
+91000003                                cpu=8,mem=48G,node=1,billing=8,gres/gpu=1,gres/gpu:rtx_4090=1
+91000009                                cpu=8,mem=64G,node=1,billing=8,gres/gpu=1
+91000021                                cpu=4,mem=16G,node=1,billing=4,gres/gpu=1,gres/gpu:a100_80gb=1
+91000020                                cpu=4,mem=16G,node=1,billing=4,gres/gpu=1
+91000014                                cpu=16,mem=128G,node=2,billing=16,gres/gpu=8
+91000004                                cpu=8,mem=48G,node=1,billing=8,gres/gpu=1,gres/gpu:rtx_4090=1
+91000015                                cpu=8,mem=48G,node=1,billing=8,gres/gpu=1
+91000012                                cpu=4,mem=16G,node=1,billing=4,gres/gpu=2

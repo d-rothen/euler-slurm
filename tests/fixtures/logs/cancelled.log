@@ -1,0 +1,2 @@
+[2026-11-20 10:00:00] INFO step 300
+slurmstepd: error: *** JOB 90999004 ON eu-g6-023 CANCELLED AT 2026-11-20T10:00:00 ***

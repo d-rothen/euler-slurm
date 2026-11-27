@@ -1,0 +1,1625 @@
+{
+ "jobs": [
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "ERROR"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 1
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999001,
+   "name": "train",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "FAILED"
+    ],
+    "reason": "NonZeroExitCode"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999001.batch",
+      "name": "batch"
+     },
+     "state": [
+      "FAILED"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 2520,
+    "eligible": 1795154400,
+    "end": 1795156930,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795154410,
+    "submission": 1795154400,
+    "suspended": 0,
+    "total": {
+     "seconds": 2520,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "logs/%x-%j.out",
+   "stderr": "logs/%x-%j.err",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "OUT_OF_MEMORY"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": true,
+      "infinite": false,
+      "number": 125
+     },
+     "name": ""
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999002,
+   "name": "big-data",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "OUT_OF_MEMORY"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999002.batch",
+      "name": "batch"
+     },
+     "state": [
+      "OUT_OF_MEMORY"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 600,
+    "eligible": 1795158000,
+    "end": 1795158605,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795158005,
+    "submission": 1795158000,
+    "suspended": 0,
+    "total": {
+     "seconds": 600,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "slurm-%j.out",
+   "stderr": "slurm-%j.out",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "SIGNALED"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": true,
+      "infinite": false,
+      "number": 15
+     },
+     "name": "TERM"
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999003,
+   "name": "long-train",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "TIMEOUT"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999003.batch",
+      "name": "batch"
+     },
+     "state": [
+      "TIMEOUT"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 14402,
+    "eligible": 1795140000,
+    "end": 1795154432,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795140030,
+    "submission": 1795140000,
+    "suspended": 0,
+    "total": {
+     "seconds": 14402,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "slurm-%j.out",
+   "stderr": "slurm-%j.out",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "SIGNALED"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": true,
+      "infinite": false,
+      "number": 15
+     },
+     "name": "TERM"
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999004,
+   "name": "mistake",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "CANCELLED"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999004.batch",
+      "name": "batch"
+     },
+     "state": [
+      "CANCELLED"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 1798,
+    "eligible": 1795167000,
+    "end": 1795168800,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795167002,
+    "submission": 1795167000,
+    "suspended": 0,
+    "total": {
+     "seconds": 1798,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "slurm-%j.out",
+   "stderr": "slurm-%j.out",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999005,
+   "name": "ok-run",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "COMPLETED"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999005.batch",
+      "name": "batch"
+     },
+     "state": [
+      "COMPLETED"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 3600,
+    "eligible": 1795161600,
+    "end": 1795165201,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795161601,
+    "submission": 1795161600,
+    "suspended": 0,
+    "total": {
+     "seconds": 3600,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "/cluster/home/alice/proj/ok.out",
+   "stderr": "/cluster/home/alice/proj/ok.err",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 90999010,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 2
+      }
+     }
+    },
+    "task": "3",
+    "task_id": {
+     "set": true,
+     "infinite": false,
+     "number": 3
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999013,
+   "name": "sweep",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "COMPLETED"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999013.batch",
+      "name": "batch"
+     },
+     "state": [
+      "COMPLETED"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 1800,
+    "eligible": 1795143600,
+    "end": 1795145700,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795143900,
+    "submission": 1795143600,
+    "suspended": 0,
+    "total": {
+     "seconds": 1800,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "sweep-%A_%3a.out",
+   "stderr": "slurm-%j.out",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999006,
+   "name": "unlucky",
+   "nodes": "eu-g6-017",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "NODE_FAIL"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999006.batch",
+      "name": "batch"
+     },
+     "state": [
+      "NODE_FAIL"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 4310,
+    "eligible": 1795147200,
+    "end": 1795151520,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795147210,
+    "submission": 1795147200,
+    "suspended": 0,
+    "total": {
+     "seconds": 4310,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "slurm-%j.out",
+   "stderr": "slurm-%j.out",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "SIGNALED"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": true,
+      "infinite": false,
+      "number": 15
+     },
+     "name": "TERM"
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 90999007,
+   "name": "scavenger",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "PREEMPTED"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "90999007.batch",
+      "name": "batch"
+     },
+     "state": [
+      "PREEMPTED"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 1790,
+    "eligible": 1795150800,
+    "end": 1795152600,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795150810,
+    "submission": 1795150800,
+    "suspended": 0,
+    "total": {
+     "seconds": 1790,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "slurm-%j.out",
+   "stderr": "slurm-%j.out",
+   "stdin": "/dev/null"
+  },
+  {
+   "account": "es_lab",
+   "allocation_nodes": 1,
+   "array": {
+    "job_id": 0,
+    "limits": {
+     "max": {
+      "running": {
+       "tasks": 0
+      }
+     }
+    },
+    "task": "",
+    "task_id": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "cluster": "euler",
+   "derived_exit_code": {
+    "status": [
+     "SUCCESS"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "exit_code": {
+    "status": [
+     "PENDING"
+    ],
+    "return_code": {
+     "set": true,
+     "infinite": false,
+     "number": 0
+    },
+    "signal": {
+     "id": {
+      "set": false,
+      "infinite": false,
+      "number": 0
+     },
+     "name": ""
+    }
+   },
+   "het": {
+    "job_id": 0,
+    "job_offset": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    }
+   },
+   "job_id": 91000003,
+   "name": "ev-rtx-1120-1430",
+   "nodes": "eu-g6-023",
+   "partition": "gpu.4h",
+   "qos": "normal",
+   "required": {
+    "CPUs": 8,
+    "memory_per_cpu": {
+     "set": false,
+     "infinite": false,
+     "number": 0
+    },
+    "memory_per_node": {
+     "set": true,
+     "infinite": false,
+     "number": 49152
+    }
+   },
+   "state": {
+    "current": [
+     "RUNNING"
+    ],
+    "reason": "None"
+   },
+   "steps": [
+    {
+     "step": {
+      "id": "91000003.batch",
+      "name": "batch"
+     },
+     "state": [
+      "RUNNING"
+     ]
+    }
+   ],
+   "submit_line": "sbatch run.sh",
+   "time": {
+    "elapsed": 4790,
+    "eligible": 1795185002,
+    "end": 1795185070,
+    "limit": {
+     "set": true,
+     "infinite": false,
+     "number": 240
+    },
+    "start": 1795185070,
+    "submission": 1795185002,
+    "suspended": 0,
+    "total": {
+     "seconds": 4790,
+     "microseconds": 0
+    }
+   },
+   "tres": {
+    "allocated": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "mem",
+      "name": "",
+      "id": 2,
+      "count": 49152
+     },
+     {
+      "type": "node",
+      "name": "",
+      "id": 4,
+      "count": 1
+     },
+     {
+      "type": "billing",
+      "name": "",
+      "id": 5,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     },
+     {
+      "type": "gres",
+      "name": "gpu:rtx_4090",
+      "id": 1002,
+      "count": 1
+     }
+    ],
+    "requested": [
+     {
+      "type": "cpu",
+      "name": "",
+      "id": 1,
+      "count": 8
+     },
+     {
+      "type": "gres",
+      "name": "gpu",
+      "id": 1001,
+      "count": 1
+     }
+    ]
+   },
+   "user": "alice",
+   "working_directory": "/cluster/home/alice/proj",
+   "stdout": "slurm-%j.out",
+   "stderr": "slurm-%j.out",
+   "stdin": "/dev/null"
+  }
+ ],
+ "meta": {
+  "plugin": {
+   "type": "openapi/slurmctld",
+   "name": "Slurm OpenAPI slurmctld",
+   "data_parser": "data_parser/v0.0.40",
+   "accounting_storage": "accounting_storage/slurmdbd"
+  },
+  "client": {
+   "source": "/dev/pts/3",
+   "user": "alice",
+   "group": "alice"
+  },
+  "command": [
+   "squeue",
+   "--json"
+  ],
+  "slurm": {
+   "version": {
+    "major": "23",
+    "micro": "4",
+    "minor": "11"
+   },
+   "release": "23.11.4",
+   "cluster": "euler"
+  }
+ },
+ "errors": [],
+ "warnings": []
+}

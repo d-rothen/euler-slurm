@@ -1,13 +1,89 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "euler-slurm"
-version = "0.1.0"
-description = ""
-requires-python = ">=3.10"
+version = "0.2.0"
+description = "SLURM jobs as typed, versioned JSON, with plain-language explanations of pending reasons, states and failures"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Daniel Rothenpieler", email = "rothenpielerdaniel@gmail.com" },
+]
+keywords = [
+  "slurm",
+  "hpc",
+  "squeue",
+  "sacct",
+  "machine-learning",
+  "euler-view",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: POSIX",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: System :: Distributed Computing",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Typing :: Typed",
+]
+# The standard library only: it runs on any cluster login node.
 dependencies = []
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[project.optional-dependencies]
+testing = [
+  "pytest>=7.4",
+]
+dev = [
+  "pytest>=7.4",
+  "ruff>=0.12",
+]
+
+[project.scripts]
+euler-slurm = "euler_slurm.cli:main"
+
+# What SLURM can do from this environment, for `euler-suite report`
+# (euler-dataset-contract) and euler-view. Registering the entry point needs no
+# dependency on euler-dataset-contract.
+[project.entry-points."euler.capabilities"]
+euler-slurm = "euler_slurm.report:capability_report"
+
+[project.urls]
+Homepage = "https://github.com/d-rothen/euler-slurm"
+Repository = "https://github.com/d-rothen/euler-slurm"
+Issues = "https://github.com/d-rothen/euler-slurm/issues"
+Documentation = "https://github.com/d-rothen/euler-slurm#readme"
+Changelog = "https://github.com/d-rothen/euler-slurm/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["euler_slurm"]
+
+[tool.hatch.build.targets.sdist]
+only-include = [
+  "CHANGELOG.md",
+  "LICENSE",
+  "README.md",
+  "euler_slurm",
+  "tests",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

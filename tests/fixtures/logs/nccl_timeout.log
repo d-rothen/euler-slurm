@@ -1,0 +1,4 @@
+[rank0]:[E1120 07:31:02.123456 ProcessGroupNCCL.cpp:607] [Rank 0] Watchdog caught collective operation timeout: WorkNCCL(SeqNum=48211, OpType=ALLREDUCE, NumelIn=1, NumelOut=1, Timeout(ms)=600000) ran for 600043 milliseconds before timing out.
+[rank1]:[E1120 07:31:02.223456 ProcessGroupNCCL.cpp:1664] [PG 0 Rank 1] Exception (either an error or timeout) detected by watchdog at work: 48211
+torch.distributed.elastic.multiprocessing.api: [WARNING] Sending process 4311 closing signal SIGTERM
+srun: error: eu-g6-023: task 0: Exited with exit code 1

@@ -1,0 +1,2 @@
+Epoch 40: 61%|######    | 811/1329 [07:20<04:41,  1.84it/s, loss=0.112]
+slurmstepd: error: *** JOB 90999003 ON eu-g6-023 CANCELLED AT 2026-11-20T06:00:32 DUE TO TIME LIMIT ***

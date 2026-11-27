@@ -1,0 +1,3 @@
+[2026-11-20 07:10:00] INFO building index over 2.1M files
+/var/spool/slurmd/job90999002/slurm_script: line 14: 81234 Killed                  python build_index.py
+slurmstepd: error: Detected 1 oom_kill event in StepId=90999002.batch. Some of your processes may have been killed by the cgroup out-of-memory handler.

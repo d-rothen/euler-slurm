@@ -1,0 +1,7 @@
+[2026-11-20 06:41:00] INFO evaluating
+Traceback (most recent call last):
+  File "/cluster/home/alice/proj/eval.py", line 88, in <module>
+    run(cfg)
+  File "/cluster/home/alice/proj/eval.py", line 61, in run
+    metric = METRICS[cfg['metric']]
+KeyError: 'abs_rel_sparse'
